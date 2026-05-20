@@ -87,8 +87,6 @@
                 'Tính năng ghi nhận đánh giá hiện đang được bảo trì và cập nhật để nâng cao trải nghiệm. Vui lòng quay lại sau nhé. Cảm ơn bạn!',
                 '⚙️'
             );
-            // Có thể chọn không reset form nếu đang bảo trì, hoặc reset tùy ý
-            // event.target.reset(); 
         }
     </script>
 </head>
@@ -300,7 +298,6 @@
                 <h2 class="text-3xl font-bold mb-2 text-center text-textdark">Hoàn tất đặt hàng</h2>
                 <p class="text-center text-gray-500 mb-8">Vui lòng để lại thông tin, BIVELA sẽ liên hệ với bạn trong thời gian sớm nhất để xác nhận và giao hàng.</p>
                 
-                <!-- Đã cập nhật sự kiện onsubmit để dùng Toast Notification -->
                 <form onsubmit="handleOrderSubmit(event)">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div>
@@ -398,7 +395,6 @@
                     <span class="text-xl">🎁</span> Nhận ngay mã VOUCHER GIẢM GIÁ 20% cho lần mua tiếp theo khi để lại đánh giá!
                 </div>
                 
-                <!-- Đã cập nhật sự kiện onsubmit để dùng Toast Notification thông báo bảo trì -->
                 <form onsubmit="handleReviewSubmit(event)">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         <div>
@@ -435,6 +431,36 @@
         </div>
     </section>
 
+    <!-- SECTION 8: TIKTOK SOCIAL PROOF -->
+    <section class="py-16 bg-sage relative overflow-hidden">
+        <!-- Các vòng tròn trang trí background -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-white opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white opacity-5 rounded-full translate-x-1/3 translate-y-1/3"></div>
+        
+        <div class="max-w-5xl mx-auto px-5 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-center md:text-left text-white md:w-2/3">
+                <div class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-bold tracking-wider mb-4 uppercase backdrop-blur-sm">
+                    🎵 BivelaSoap trên TikTok
+                </div>
+                <h2 class="text-3xl md:text-4xl mb-4 font-serif">Xem cận cảnh chất xà phòng thực tế!</h2>
+                <p class="text-white/90 text-lg">
+                    Khám phá ngay hình ảnh thực tế, độ tạo bọt và những câu chuyện chữa lành làn da được chúng mình chia sẻ trực quan nhất trên TikTok.
+                </p>
+            </div>
+            
+            <div class="md:w-1/3 flex justify-center md:justify-end">
+                <a href="https://www.tiktok.com/@bivelasoap/photo/7641999637892713736?_r=1&_t=ZS-96WRFfSWn9s" target="_blank" rel="noopener noreferrer" 
+                   class="btn-pulse flex items-center gap-3 bg-white text-textdark px-8 py-4 rounded-full font-bold text-lg hover:bg-kraftlight transition-all shadow-xl transform hover:-translate-y-1">
+                    <span class="w-8 h-8 flex items-center justify-center bg-black text-white rounded-full text-sm">
+                        <!-- Icon Music đơn giản thay cho logo TikTok -->
+                        ♪
+                    </span>
+                    Xem bài viết ngay
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="bg-textdark text-white pt-16 pb-8">
         <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-gray-700 pb-10">
@@ -456,9 +482,9 @@
             <div>
                 <h4 class="text-lg font-bold mb-4 font-sans">Kết Nối Với Bivela</h4>
                 <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sage transition-colors">FB</a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sage transition-colors">IG</a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sage transition-colors text-xs font-bold font-sans">TikTok</a>
+                    <a href="https://www.facebook.com/share/14dE9GuDRg9/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sage transition-colors">FB</a>
+                    <a href="https://www.instagram.com/bivela_soap?utm_source=qr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sage transition-colors">IG</a>
+                    <a href="https://www.tiktok.com/@bivelasoap" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-sage transition-colors text-xs font-bold font-sans">TikTok</a>
                 </div>
             </div>
         </div>
