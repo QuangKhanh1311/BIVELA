@@ -257,8 +257,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
                 <!-- SẢN PHẨM 1: Nguyên bản -->
                 <div class="bg-white p-6 rounded-2xl shadow-xl border border-kraft flex flex-col items-center text-center transform transition duration-300 hover:-translate-y-2">
-                    <div class="w-full h-64 bg-gray-100 rounded-xl mb-6 overflow-hidden">
-                        <img src="./sp-nguyen-ban.png" alt="Khổ qua nguyên bản" class="w-full h-full object-cover">
+                    <!-- SỬ DỤNG ASPECT-SQUARE & OBJECT-CONTAIN ĐỂ KHÔNG BỊ CẮT ẢNH -->
+                    <div class="w-full aspect-square bg-white rounded-xl mb-6 overflow-hidden flex items-center justify-center p-2">
+                        <img src="./sp-nguyen-ban.jpg" alt="Khổ qua nguyên bản" class="w-full h-full object-contain transition-transform duration-500 hover:scale-105">
                     </div>
                     <h3 class="text-2xl font-bold mb-2 text-textdark">Khổ Qua Nguyên Bản</h3>
                     <p class="text-sm text-gray-500 mb-4 italic">Mùi hương tự nhiên, mộc mạc</p>
@@ -274,8 +275,9 @@
                 <!-- SẢN PHẨM 2: Tràm trà -->
                 <div class="bg-white p-6 rounded-2xl shadow-xl border border-kraft flex flex-col items-center text-center transform transition duration-300 hover:-translate-y-2 relative">
                     <div class="absolute top-4 right-4 bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full z-10">BEST SELLER</div>
-                    <div class="w-full h-64 bg-gray-100 rounded-xl mb-6 overflow-hidden relative">
-                        <img src="./sp-tram-tra.png" alt="Khổ qua hương tràm trà" class="w-full h-full object-cover">
+                    <!-- SỬ DỤNG ASPECT-SQUARE & OBJECT-CONTAIN ĐỂ KHÔNG BỊ CẮT ẢNH -->
+                    <div class="w-full aspect-square bg-white rounded-xl mb-6 overflow-hidden flex items-center justify-center p-2">
+                        <img src="./sp-tram-tra.jpg" alt="Khổ qua hương tràm trà" class="w-full h-full object-contain transition-transform duration-500 hover:scale-105">
                     </div>
                     <h3 class="text-2xl font-bold mb-2 text-textdark">Khổ Qua & Tràm Trà</h3>
                     <p class="text-sm text-gray-500 mb-4 italic">Hương thơm the mát, sảng khoái</p>
